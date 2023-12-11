@@ -1,0 +1,22 @@
+[user]
+    name = Michael Spieler
+    email = mspieler101@gmail.com
+[core]
+    editor = vim
+[alias]
+    st = status -s
+    fa = fetch --all
+    co = checkout
+    dc = diff --cached
+    lg = log --oneline --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) %C(green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+    la = log --all --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) %C(green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+    lu = log -u --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) %C(green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%n'
+    lf = log --stat --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) %C(green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%n'
+    git = !exec git
+    tracked-files = ls-tree -r master --name-only
+[push]
+    default = simple
+[pull]
+    rebase = true
+[fetch]
+    prune = true

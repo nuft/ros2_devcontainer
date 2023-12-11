@@ -1,0 +1,29 @@
+{
+	"dockerFile": "Dockerfile",
+	"remoteUser": "ros",
+	"runArgs": [
+		"--network=host",
+		"--security-opt=seccomp:unconfined",
+		"--security-opt=apparmor:unconfined"
+		// "--volume=/tmp/.X11-unix:/tmp/.X11-unix",
+		// "--volume=/mnt/wslg:/mnt/wslg",
+		// "--ipc=host"
+		// uncomment to use intel iGPU
+		// "--device=/dev/dri"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"betwo.b2-catkin-tools",
+				"ms-azuretools.vscode-docker",
+				"ms-iot.vscode-ros",
+				"ms-python.python",
+				"ms-vscode.cpptools",
+				"redhat.vscode-yaml",
+				"smilerobotics.urdf",
+				"twxs.cmake"
+			]
+		}
+	}
+  }
+  
